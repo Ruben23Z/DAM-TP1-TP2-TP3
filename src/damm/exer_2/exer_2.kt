@@ -28,6 +28,9 @@ fun main() {
                     println("Resultado: ${num1 * num2}")
                 } else if (operacao == "/") {
                     println("Resultado: ${num1 / num2}")
+                } else {
+                    println("Operação inválida.")
+                    break
                 }
             } catch (e: Exception) {
                 print("error: ${e.message}")
@@ -46,7 +49,11 @@ fun main() {
                 print("Resultado: ${bool1 || bool2}")
             } else if (operacao == "!") {
                 print("Resultado: ${!(bool1 && bool2)}")
+            } else {
+                println("Operação inválida.")
+                break
             }
+
         } else if (opcao == 3) {
             print("Digite um número inteiro do shift: ")
             val valorShift = readln().toInt()
@@ -59,6 +66,9 @@ fun main() {
                 print("Resultado: ${numero shl valorShift}")
             } else if (operacao == "shr") {
                 print("Resultado: ${numero shr valorShift}")
+            } else {
+                println("Operação inválida.")
+                break
             }
         } else if (opcao == 4) {
             print("Digite um número inteiro: ")
@@ -69,6 +79,7 @@ fun main() {
             else println("Boolean: True")
         } else {
             println("Opção inválida.")
+            break
         }
         print("--------------------------------------------------------------\n")
     }
