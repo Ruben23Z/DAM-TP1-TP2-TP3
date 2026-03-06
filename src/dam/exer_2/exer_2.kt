@@ -1,4 +1,4 @@
-package damm.exer_2
+package dam.exer_2
 
 
 fun main() {

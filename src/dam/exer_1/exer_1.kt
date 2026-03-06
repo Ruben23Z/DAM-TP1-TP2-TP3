@@ -1,4 +1,4 @@
-package damm.exer_1
+package dam.exer_1
 
 fun main() {
     val numeros = IntArray(50) //Cria array de 50 valores

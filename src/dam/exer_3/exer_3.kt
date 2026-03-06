@@ -1,4 +1,4 @@
-package damm.exer_3
+package dam.exer_3
 
 fun main() {
     val height = 1000.0
